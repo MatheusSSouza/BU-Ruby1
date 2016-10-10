@@ -1,0 +1,20 @@
+<h1>Itens#new</h1>
+<p>Find me in app/views/itens/new.html.erb</p>
+<p>Hello tomorow</p>
+<p>Good bye yesterday</p>
+
+<h2>New Item</h2>
+
+<%= form_for :itens, url: itens_path do |f| %>
+    <p>
+        <%= f.label :title %><br>
+        <%= f.text_field :title %>
+    </p>
+    <p>
+        <%= f.label :notes %><br>
+        <%= f.text_field :notes %>
+    </p>
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>
